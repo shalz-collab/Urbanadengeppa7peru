@@ -1,0 +1,13 @@
+@echo off
+echo Starting deployment setup...
+echo Adding files...
+git add .
+echo Committing changes...
+git commit -m "Configure mock API and automated GitHub Pages deployment"
+echo Pushing to GitHub (this will trigger the GitHub Actions deploy)...
+git push origin main
+echo.
+echo Deployment triggered successfully!
+echo You can check the progress under the 'Actions' tab on your GitHub repository.
+echo.
+pause
